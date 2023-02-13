@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.CheckOutFragment">
+
+    <ImageView
+        android:id="@+id/checkout_header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/main_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/checkout_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_location"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/checkout_btn_address"
+        app:layout_constraintLeft_toLeftOf="@id/checkout_btn_address"
+        app:layout_constraintTop_toTopOf="@id/checkout_btn_address" />
+
+    <TextView
+        android:id="@+id/checkout_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:maxWidth="300dp"
+        android:text="Đại học Thuỷ Lợi"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toTopOf="@id/checkout_name"
+        app:layout_constraintLeft_toRightOf="@id/checkout_icon"
+        app:layout_constraintTop_toTopOf="@id/checkout_btn_address"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/checkout_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Đặng Minh Tú"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/checkout_btn_address"
+        app:layout_constraintLeft_toRightOf="@id/checkout_icon"
+        app:layout_constraintTop_toBottomOf="@id/checkout_address" />
+
+    <TextView
+        android:id="@+id/checkout_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="0325251005"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:translationZ="10dp"
+        app:layout_constraintLeft_toRightOf="@id/checkout_name"
+        app:layout_constraintTop_toBottomOf="@id/checkout_address" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/checkout_btn_address"
+        app:layout_constraintRight_toRightOf="@id/checkout_btn_address"
+        app:layout_constraintTop_toTopOf="@id/checkout_btn_address" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_linemail"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/checkout_btn_address"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/checkout_btn_address"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/checkout_header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THANH TOÁN"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/checkout_header"
+        app:layout_constraintLeft_toLeftOf="@id/checkout_header"
+        app:layout_constraintRight_toRightOf="@id/checkout_header"
+        app:layout_constraintTop_toTopOf="@+id/checkout_header" />
+
+    <ImageButton
+        android:id="@+id/checkout_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+        app:layout_constraintBottom_toBottomOf="@id/checkout_header"
+        app:layout_constraintLeft_toLeftOf="@id/checkout_header"
+        app:layout_constraintTop_toTopOf="@id/checkout_header" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/checkout_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkout_footer"
+        app:layout_constraintTop_toBottomOf="@id/checkout_btn_address" />
+
+    <ImageView
+        android:id="@+id/checkout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/main_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/checkout_done"
+        style="@style/TextBlockStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THANH TOÁN"
+        android:translationZ="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/main_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/checkout_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Tổng: "
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:translationZ="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/checkout_footer"
+        app:layout_constraintTop_toTopOf="@id/checkout_footer" />
+
+    <TextView
+        android:id="@+id/checkout_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="100.000.000đ"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:translationZ="10dp"
+        app:layout_constraintLeft_toRightOf="@id/checkout_all"
+        app:layout_constraintTop_toTopOf="@id/checkout_footer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

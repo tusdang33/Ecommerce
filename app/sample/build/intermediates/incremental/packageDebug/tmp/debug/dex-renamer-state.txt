@@ -1,0 +1,4 @@
+#Thu Jun 23 02:48:45 ICT 2022
+base.0=D\:\\Learn\\Project\\ecommerce\\sample\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable-v24/ic_cart.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable-v24/ic_user.xml" value="0.333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/bottomsheet_shape.xml" value="0.347" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/cart_selector.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/home_selector.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_baseline_cancel_24.xml" value="0.296" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_baseline_drive_file_rename_outline_24.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_baseline_edit_black.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_baseline_edit_location_alt_24.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_baseline_location_yellow.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_heart.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.296" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_linemail.xml" value="0.296" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_list.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_list_2.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_location.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/ic_logout.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/list_selector.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/nav_item_color.xml" value="0.34" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/drawable/user_selector.xml" value="0.2875" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/activity_admin.xml" value="0.33489583333333334" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/activity_cart.xml" value="0.33489583333333334" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/activity_home.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/activity_list.xml" value="0.3342391304347826" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/activity_login.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/activity_main.xml" value="0.3342391304347826" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/activity_register.xml" value="0.33489583333333334" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/activity_splash_screen.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/activity_user.xml" value="0.33489583333333334" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/dialog_delete.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/dialog_delete_product.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/dialog_edit_address.xml" value="0.34791666666666665" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/dialog_role.xml" value="0.34791666666666665" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/dropdown_list.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_add_product.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_address.xml" value="0.33489583333333334" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_admin.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_cart.xml" value="0.3342391304347826" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_check_out.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_detail.xml" value="0.34479166666666666" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_edit_product.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_home.xml" value="0.3342391304347826" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_info.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_list.xml" value="0.33" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_manager_product.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_manager_user.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/fragment_user.xml" value="0.3342391304347826" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/item_address.xml" value="0.34791666666666665" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/item_cart.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/item_checkout.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/item_manager_product.xml" value="0.34791666666666665" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/item_product.xml" value="0.33" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/item_user.xml" value="0.5234375" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/layout/test.xml" value="0.5" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/menu/nav_menu.xml" value="0.3489583333333333" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/menu/nav_menu_admin.xml" value="0.34375" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/menu/nav_menu_user.xml" value="0.34375" />
+        <entry key="..\:/Learn/Project/Ecommerce_App/app/src/main/res/menu/shop_menu.xml" value="0.3489583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

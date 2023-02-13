@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/address_container"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/address_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="10dp"
+        android:backgroundTint="@color/delete"
+        android:background="@drawable/ic_baseline_location_yellow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/address_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:text="Đại học Thuỷ Lợi"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/address_img"
+        />
+    <TextView
+        android:id="@+id/address_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đặng Minh Tú"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:elevation="10dp"
+        app:layout_constraintTop_toBottomOf="@id/address_address"
+        app:layout_constraintLeft_toRightOf="@id/address_img"
+        />
+    <TextView
+        android:id="@+id/address_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0325251005"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:elevation="10dp"
+        app:layout_constraintTop_toBottomOf="@id/address_address"
+        app:layout_constraintLeft_toRightOf="@id/address_name"
+        />
+
+    <ImageButton
+        android:id="@+id/address_edit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:backgroundTint="@color/edit"
+        android:background="@drawable/ic_baseline_edit_black"
+        android:layout_marginBottom="8dp"
+        android:elevation="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/address_delete"/>
+
+    <ImageButton
+        android:id="@+id/address_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:backgroundTint="@color/delete"
+        android:elevation="10dp"
+        android:background="@drawable/ic_baseline_delete_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

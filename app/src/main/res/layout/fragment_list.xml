@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.ListFragment">
+
+    <ImageView
+        android:id="@+id/list_header"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <SearchView
+        android:id="@+id/list_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layoutDirection="rtl"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/list_header"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_btn_popular" />
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="20"
+        android:text="Danh sách sản phẩm"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintLeft_toLeftOf="@id/list_header"
+        app:layout_constraintRight_toRightOf="@id/list_header"
+        app:layout_constraintTop_toTopOf="@id/list_header" />
+
+
+    <Button
+        android:id="@+id/list_btn_popular"
+        style="@style/TextBlockStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Mới nhất"
+        android:textColor="@color/second_color"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/list_header"
+        app:layout_constraintRight_toLeftOf="@id/list_category"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_category"
+        android:autofillHints="Loại"
+        app:layout_constraintLeft_toRightOf="@id/list_btn_popular"
+        app:layout_constraintRight_toLeftOf="@id/list_btn_price"
+        app:layout_constraintTop_toBottomOf="@id/guideline">
+    </androidx.appcompat.widget.AppCompatSpinner>
+
+    <Button
+        android:id="@+id/list_btn_price"
+        style="@style/TextBlockStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Giá giảm"
+        android:textColor="@color/second_color"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@id/list_category"
+        app:layout_constraintRight_toRightOf="@id/list_header"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_list"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_header"
+        tools:listitem="@layout/item_product" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    tools:context=".view.fragments.ManagerProductFragment">
+
+    <ImageView
+        android:id="@+id/manager_header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/main_color"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DANH SÁCH HÀNG"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintLeft_toLeftOf="@id/manager_header"
+        app:layout_constraintRight_toRightOf="@id/manager_header"
+        app:layout_constraintTop_toTopOf="@id/manager_header" />
+
+    <ImageButton
+        android:id="@+id/prolist_add"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/ic_baseline_add_24"
+        android:backgroundTint="@color/add"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="@id/manager_header"
+        app:layout_constraintTop_toTopOf="@id/manager_header" />
+
+
+    <ImageButton
+        android:id="@+id/prolist_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintLeft_toLeftOf="@id/manager_header"
+        app:layout_constraintTop_toTopOf="@id/manager_header" />
+
+    <SearchView
+        android:id="@+id/manager_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:searchIcon="@drawable/ic_baseline_search_white"
+        app:layout_constraintBottom_toBottomOf="@id/manager_header"
+        app:layout_constraintLeft_toLeftOf="@id/manager_header"
+        app:layout_constraintRight_toRightOf="@id/manager_header" />
+
+    <Button
+        android:id="@+id/manager_btn_popular"
+        style="@style/TextBlockStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Mới nhất"
+        android:textColor="@color/second_color"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/manager_category"
+        app:layout_constraintTop_toBottomOf="@id/manager_search" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/manager_category"
+        app:layout_constraintLeft_toRightOf="@id/manager_btn_popular"
+        app:layout_constraintRight_toLeftOf="@id/manager_btn_price"
+        app:layout_constraintTop_toBottomOf="@id/manager_search">
+    </androidx.appcompat.widget.AppCompatSpinner>
+
+    <Button
+        android:id="@+id/manager_btn_price"
+        style="@style/TextBlockStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Giá giảm"
+        android:textColor="@color/second_color"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@id/manager_category"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/manager_search" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/manager_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manager_btn_popular" />
+</androidx.constraintlayout.widget.ConstraintLayout>

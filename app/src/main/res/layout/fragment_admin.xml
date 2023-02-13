@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    tools:context=".view.fragments.AdminFragment">
+
+    <ImageView
+        android:id="@+id/user_header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/main_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/user_avt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintBottom_toBottomOf="@id/user_header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/admin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADMIN"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/user_header"
+        app:layout_constraintLeft_toRightOf="@id/user_avt"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/admin_btn_info"
+        style="@style/TextBlockStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:elevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/user_header" />
+
+    <ImageView
+        android:id="@+id/user_icon_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/ic_user"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_info"
+        app:layout_constraintLeft_toLeftOf="@id/admin_btn_info"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_info" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:elevation="10dp"
+        android:text="Thông tin cá nhân"
+        android:textColor="@color/second_color"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_info"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon_user"
+        app:layout_constraintStart_toStartOf="@+id/admin_btn_info"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_info" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_info"
+        app:layout_constraintRight_toRightOf="@id/admin_btn_info"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_info" />
+
+    <ImageButton
+        android:id="@+id/admin_btn_account"
+        style="@style/TextBlockStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:elevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/admin_btn_info" />
+
+    <ImageView
+        android:id="@+id/user_icon_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/ic_list"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_account"
+        app:layout_constraintLeft_toLeftOf="@id/admin_btn_account"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_account" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:elevation="10dp"
+        android:text="Quản lý tài khoản"
+        android:textColor="@color/second_color"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_account"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon_order"
+        app:layout_constraintStart_toStartOf="@+id/admin_btn_account"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_account" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_account"
+        app:layout_constraintRight_toRightOf="@id/admin_btn_account"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_account" />
+    /////
+
+    <ImageButton
+        android:id="@+id/admin_btn_product"
+        style="@style/TextBlockStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:elevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/admin_btn_account"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/user_icon_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/ic_box"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_product"
+        app:layout_constraintLeft_toLeftOf="@id/admin_btn_product"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_product" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:elevation="10dp"
+        android:text="Quản lý hàng"
+        android:textColor="@color/second_color"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_product"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon_product"
+        app:layout_constraintStart_toStartOf="@+id/admin_btn_product"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_product" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_product"
+        app:layout_constraintRight_toRightOf="@id/admin_btn_product"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_product" />
+
+    <ImageButton
+        android:id="@+id/admin_btn_address"
+        style="@style/TextBlockStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:elevation="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/admin_btn_product" />
+
+    <ImageView
+        android:id="@+id/admin_icon_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/ic_location"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_address"
+        app:layout_constraintLeft_toLeftOf="@id/admin_btn_address"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_address" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:elevation="10dp"
+        android:text="Sổ địa chỉ"
+        android:textColor="@color/second_color"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_address"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon_product"
+        app:layout_constraintStart_toStartOf="@+id/admin_btn_address"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_address" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_address"
+        app:layout_constraintRight_toRightOf="@id/admin_btn_address"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_address" />
+    /////
+
+    <ImageButton
+        android:id="@+id/admin_btn_logout"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/stroke_button"
+        android:elevation="6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_btn_address" />
+
+    <TextView
+        android:id="@+id/user_txt_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:elevation="10dp"
+        android:text="Đăng xuất"
+        android:textColor="@color/main_color"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_logout"
+        app:layout_constraintEnd_toStartOf="@+id/user_icon_logout"
+        app:layout_constraintLeft_toLeftOf="@id/admin_btn_logout"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_logout" />
+
+    <ImageView
+        android:id="@+id/user_icon_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/ic_logout"
+        android:backgroundTint="@color/main_color"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/admin_btn_logout"
+        app:layout_constraintRight_toRightOf="@id/admin_btn_logout"
+        app:layout_constraintTop_toTopOf="@id/admin_btn_logout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

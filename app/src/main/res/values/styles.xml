@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+    <style name="TextBlockStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/white</item>
+    </style>
+    <style name="TextIconStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@drawable/ic_homef</item>
+        <item name="elevation">0dp</item>
+        <item name="borderRoundPercent">0</item>
+    </style>
+    <style name="YellowButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/main_color</item>
+    </style>
+    <style name="DelButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/delete</item>
+    </style>
+    <style name="TextStrokeStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/white</item>
+        <item name="borderRoundPercent">10</item>
+        <item name="strokeWidth">10dp</item>
+        <item name="strokeColor">@color/main_color</item>
+    </style>
+    <style name="AutoCpl" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/main_color</item>
+    </style>
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottomsheet_shape</item>
+    </style>
+</resources>
